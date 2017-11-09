@@ -29,5 +29,22 @@ for ($i=0;$i<$classelen;$i++){
   echo $classe[$i],"<br>";
 }
 //select box c nul!
-
+$pays = [
+  "BE"=>"Belgique",
+  "EN"=>"Angleterre",
+  "S"=>"Suisse",
+  "GE"=>"Allemagne",
+  "FR"=>"France",
+  "ES"=>"Espagne",
+  "IT"=>"Italie",
+  "L"=>"Luxembourg",
+  "NL"=>"Pays-Bas",
+  "SU"=>"Suède"
+];
+$npays = count($pays);
+echo "<select name=","formGender",">";
+foreach($pays as $key => $n){
+  echo "<option value=",$pays[$key],">",$pays[$key],"</option>";
+}
+echo "</select>";
  ?>
