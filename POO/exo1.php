@@ -8,7 +8,7 @@ class Form{
     $text = $_POST['text'];
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
-    echo "<form action='index.php' method='post'>";
+    echo "<form action='exo1.php' method='post'>";
     echo "nom : <input type='text' name='nom' value=''/>";
     echo "prenom : <input type='text' name='prenom' value=''/>";
     echo "</br>";
@@ -44,4 +44,3 @@ $form = new Form();
 echo $form->construct($nom,$prenom);
 echo $form->submit('Modifier');
  ?>
-<!-- EXO 2 -->
