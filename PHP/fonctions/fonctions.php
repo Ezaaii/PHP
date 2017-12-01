@@ -77,7 +77,7 @@ $volume = $rayon * $rayon * 3.14 * 2 * (1/3);
 echo 'Le volume du cône de rayon 5 et de hauteur 2 est : ' . $volume . ' cm<sup>3</sup><br />';
 
 //exo gm 1
-$stringToReverse = "bonjour, j'aime le pain.";
+$stringToReverse = "j'aime mon chat.";
 $reverse = strrev($stringToReverse);
 echo $reverse,"</br>";
 //exo gm 2

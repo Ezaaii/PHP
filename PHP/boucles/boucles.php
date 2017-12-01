@@ -1,6 +1,6 @@
 <?php
 //boucle foreach
-$verbe = "cod";
+$verbe = "plong";
 $conjuguaisonER=["e","es","e","ons","ez","ent"];
 $pronoms_personnels=[
   'je','tu','elle/il','nous','vous','elles/ils'
