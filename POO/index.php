@@ -1,4 +1,4 @@
-
+<!-- EXO 1 POO -->
 <?php
 class Form{
   function construct(){
@@ -44,3 +44,4 @@ $form = new Form();
 echo $form->construct($nom,$prenom);
 echo $form->submit('Modifier');
  ?>
+<!-- EXO 2 -->
