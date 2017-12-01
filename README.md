@@ -10,3 +10,8 @@
 * ### MY-SQL
   + Base de données (MySQL)
   + Call PHP
+
+* ### POO
+  + Formulaire
+  + Html
+  + Validator
