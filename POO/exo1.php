@@ -1,13 +1,16 @@
 <!-- EXO 1 POO -->
 <?php
 class Form{
-  function construct(){
+  //on ouvre la class formulaire
+  function construct(){ //la fonction construct est là pour construire les balises de formulaires
+    //on appelle les variables
     global $nom;
     global $prenom;
     global $text;
     $text = $_POST['text'];
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
+    //on echo le formulaire
     echo "<form action='exo1.php' method='post'>";
     echo "nom : <input type='text' name='nom' value=''/>";
     echo "prenom : <input type='text' name='prenom' value=''/>";
@@ -30,17 +33,18 @@ class Form{
     echo "<input type='submit' name='submit' value='submit'/>";
     echo "</form>";
   }
-  function submit(){
+  function submit(){ //on echo une phrase pour dire que le formulaire à été rempli avec les infos entrées.
     global $nom;
     global $prenom;
     global $text;
     echo "<h2>bonjour ",$prenom," ",$nom,".</h2>",$text;
   }
 }
+//on rappelle les variables en global hors class.
 global $nom;
 global $prenom;
 $form = new Form();
-
+//Et on echo les ptites fonctions.
 echo $form->construct($nom,$prenom);
 echo $form->submit('Modifier');
  ?>
