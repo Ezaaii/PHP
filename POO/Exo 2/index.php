@@ -55,7 +55,7 @@ class Voiture{
     echo $this-> date(Y) - $date;
   }
   function drive(){
-    $this->km=160000;
+    $this->km=80000;
     $newkm = $this->km + 100000;
     echo $newkm," km";
     global $newkm;
